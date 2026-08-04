@@ -1,15 +1,24 @@
-# mcp-lens-org
+# @pipeworx/lens-org
 
-Lens.org MCP — patent + scholarly platform.
+[The Lens](https://www.lens.org) MCP — global patent + scholarly search platform. Free academic API key required (Lens authorisation token).
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
+## Auth
+
+- Platform key: `PLATFORM_LENS_KEY` (Bearer token from https://www.lens.org/lens/user/subscriptions).
+- BYO: pass `?_apiKey=<token>` on the gateway URL.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `patents_search` | Patent search. |
-| `scholarly_search` | Scholarly works search. |
+- `patents_search(query, size?, from?)` — patent search (Lucene-style query against the Lens patent index)
+- `scholarly_search(query, size?, from?)` — scholarly works search
+- `patent(lens_id)` — single patent record
+- `scholarly(lens_id)` — single scholarly work
+
+## Data source
+
+`https://api.lens.org/`
 
 ## Quick Start
 
@@ -25,7 +34,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -49,7 +58,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
