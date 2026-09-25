@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/lens-org",
   "title": "Lens Org",
-  "description": "Lens.org patent + scholarly search (free academic key required)",
-  "version": "0.1.0",
+  "description": "Lens.org MCP — patent + scholarly platform.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/lens-org",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-lens-org",
