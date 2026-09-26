@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-lens-org",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lens.org MCP — patent + scholarly platform.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0710ad811cabac38b7c6bac8e7cf4aba7639df5a6cbb52b58d52d94111129a2b",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-54713acede1cddd1da2cdc57cdc0f0e23219e21848ba0ad83bd18280f28122fd",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
