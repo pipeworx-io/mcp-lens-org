@@ -1,0 +1,76 @@
+[
+  {
+    "name": "patents_search",
+    "description": "Search Lens.org patent database by free-text or Lucene query (requires Bearer token); returns up to 1000 patent records with title, applicant, filing date, and claims.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text or Lucene-style query."
+        },
+        "size": {
+          "type": "number",
+          "description": "1-1000 (default 25)."
+        },
+        "from": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "scholarly_search",
+    "description": "Search Lens.org scholarly works (academic papers, preprints) by free-text or Lucene query (requires Bearer token); returns title, authors, journal, year, and DOI.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "size": {
+          "type": "number"
+        },
+        "from": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "patent",
+    "description": "Fetch a single Lens.org patent record by its lens_id (requires Bearer token); returns full bibliographic data including claims, inventors, and priority dates.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lens_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lens_id"
+      ]
+    }
+  },
+  {
+    "name": "scholarly",
+    "description": "Fetch a single Lens.org scholarly work by its lens_id (requires Bearer token); returns full metadata including abstract, authors, citations, and open-access links.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lens_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lens_id"
+      ]
+    }
+  }
+]
